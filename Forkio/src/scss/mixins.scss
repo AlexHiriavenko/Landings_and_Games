@@ -1,0 +1,81 @@
+@import "variables";
+$screen-size_max: 1200px;
+$screen-size_large: 993px;
+$screen-size_medium-max: 992px;
+$screen-size_medium: 481px;
+$screen-size_small: 480px;
+$screen-size_min: 320px;
+
+// от 993 до 1200
+@mixin large-between() {
+    @media ((min-width: $screen-size_large) and (max-width:$screen-size_max)) {
+        @content
+    }
+};
+
+// от 993
+@mixin large() {
+    @media (min-width: $screen-size_large) {
+        @content
+    }
+};
+
+// от 481 до 992
+@mixin medium-between() {
+    @media ((min-width: $screen-size_medium) and (max-width:$screen-size_medium-max)) {
+        @content
+    }
+};
+
+// от 481
+@mixin medium() {
+    @media (min-width: $screen-size_medium) {
+        @content
+    }
+};
+
+// от 320 до 480 
+@mixin mini-between() {
+    @media ((min-width: $screen-size_min) and (max-width:$screen-size_small)) {
+        @content
+    }
+};
+
+// от 320
+@mixin medium-max() {
+    @media (min-width: $screen-size_min) {
+        @content
+    }
+};
+
+// до 480 
+@mixin before-mid() {
+    @media (max-width:$screen-size_small) {
+        @content
+    }
+};
+
+// до 992 
+@mixin before-large() {
+    @media (max-width:$screen-size_medium-max) {
+        @content
+    }
+};
+
+@mixin btn-header() {
+    background-color: $sub-general-text-color;
+    color: $general-text-color;
+    font-weight: 700;
+    border-radius: 40px;
+    &:hover {
+        color: $sub-general-text-color;
+        background-color: $general-text-color;
+    }
+}
+
+@mixin sections-title() {
+    font-family: $main-font-family;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1;
+}

@@ -1,0 +1,28 @@
+{
+  "name": "the_ham",
+  "version": "1.0.0",
+  "description": "landing page with html, scss technologies",
+  "main": "index.html",
+  "scripts": {
+    "dev": "gulp",
+    "product": "gulp product --product",
+    "delDist": "gulp delDist --delDist",
+    "deploy": "npx gh-pages -d src -e The_Ham",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://alexhiriavenko.github.io/Landings_and_Games/"
+  },
+  "keywords": [
+    "gitpod",
+    "gulp",
+    "scss"
+  ],
+  "author": "march",
+  "license": "ISC",
+  "homepage": "https://alexhiriavenko.github.io/Landings_and_Games/Forkio/The_Ham",
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}

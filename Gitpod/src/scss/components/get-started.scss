@@ -1,0 +1,199 @@
+#get-started-section {
+  margin-top: 178px;
+}
+
+.get-started__title {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 133%;
+  text-align: center;
+}
+
+.get-started__container {
+  margin-top: 48px;
+  @include center-flex;
+  column-gap: 26px;
+}
+
+.get-started__subtitle {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 125%;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.get-started__text {
+  font-size: 24px;
+  line-height: 133%;
+  text-align: center;
+  max-width: 530px;
+  margin-inline: auto;
+}
+
+.get-started__text.accent {
+  border-radius: 12px;
+  background: #ffe4bc;
+  width: 151px;
+  margin-top: 6px;
+}
+
+.git,
+.workspace {
+  width: 50%;
+  min-height: 651px;
+  max-height: 655px;
+  padding-top: 56px;
+  padding-bottom: 88px;
+  border-radius: 20px;
+  background: #fff;
+  padding-inline: 16px;
+}
+
+.workspace {
+  padding-inline: 8px;
+}
+
+.git__links {
+  margin-block: 64px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.git__link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 262px;
+  height: 46px;
+  padding-left: 33px;
+  margin-inline: auto;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 114%;
+  text-align: center;
+  color: #fff;
+  &:hover {
+    filter: brightness(120%);
+  }
+  &:nth-of-type(1) {
+    background-color: $accent-color-dark;
+  }
+  &:nth-of-type(2) {
+    background-color: #000;
+  }
+  &:nth-of-type(3) {
+    background-color: #2684ff;
+  }
+}
+
+.workspace__options-list {
+  margin-top: 32px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  width: 82.6%;
+}
+
+.workspace__options-item {
+  height: 56px;
+  @include sb-flex;
+  padding-left: 16px;
+  padding-right: 12px;
+  border-radius: 12px;
+  background: #f9f9f9;
+  text-align: left;
+}
+
+.workspace__options-item > span {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 16px;
+  font-size: 20px;
+}
+
+.workspace__options-link {
+  font-size: 14px;
+  line-height: 114%;
+  text-align: center;
+  color: #fff;
+  border-radius: 12px;
+  padding: 8px 12px;
+  background-color: $main-color;
+  min-width: 141px;
+}
+
+@include mid-screen() {
+  #get-started-section {
+    margin-top: 120px;
+  }
+
+  .get-started__title {
+    font-size: calc((100vw - 768px) / (1100 - 768) * (54 - 42) + 42px);
+  }
+
+  .get-started__container {
+    flex-direction: column;
+    row-gap: 36px;
+  }
+
+  .git,
+  .workspace {
+    width: 70%;
+    max-width: 640px;
+  }
+
+  .get-started__subtitle {
+    font-size: 28px;
+  }
+
+  .get-started__text {
+    font-size: 20px;
+  }
+
+  .workspace__options-item > span {
+    font-size: 17px;
+    column-gap: 8px;
+  }
+}
+
+@include tablet-screen() {
+  .git,
+  .workspace {
+    width: 96%;
+  }
+
+  .workspace__options-item > span {
+    font-size: 16px;
+    column-gap: 8px;
+  }
+}
+
+@include mobile-screen() {
+  .get-started__subtitle {
+    font-size: 22px;
+  }
+  .get-started__text {
+    font-size: 18px;
+  }
+
+  .git__link {
+    width: 220px;
+    text-align: left;
+    padding-left: 16px;
+  }
+
+  .workspace__options-list {
+    width: 100%;
+  }
+
+  .workspace__options-link {
+    width: 90px;
+    min-width: 90px;
+    height: 46px;
+  }
+}

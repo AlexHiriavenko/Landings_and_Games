@@ -1,0 +1,82 @@
+.editor {
+    margin-bottom: 70px;
+    &__title {
+        font-family: $main-font-family;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 700;
+        font-size: 54px;
+        line-height: 1;
+        color: #635C73;
+    }
+    &__text {
+        font-family: $additional-font-family;
+        font-size: 21px;
+        line-height: 1.5;
+        text-align: center;
+        color: #323232;
+        margin: 33px auto 15px;
+        margin-left: auto;
+        margin-right: auto;        
+        max-width: 860px;
+    }
+      @include before-large {
+        margin-bottom: 98px;
+        &__title {
+          font-size: calc( (100vw - 480px)/(768 - 480) * (42 - 32) + 32px);
+        }
+        &__text {
+          margin-top: 31px;
+          margin-bottom: 26px;
+          max-width: 720px;
+          font-size: calc( (100vw - 480px)/(768 - 480) * (21 - 19) + 19px);
+          max-width: 712px;
+        }        
+      }
+      @include before-mid {
+        margin-bottom: 88px;
+        &__title {
+          font-size: 26px;
+        }
+        &__text {
+          font-size: 14px;
+          margin-top: 25px;
+          margin-bottom: 34px;
+          max-width: 90%;
+        }
+      }    
+    &__list {
+        font-family: $main-font-family;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 20px;
+        display: flex;
+        gap: 20px 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    &__link {
+      color:#24292F;
+      display: flex;
+      align-items: center;
+      background-color: #f6f8fa;
+      border: 1px solid #d5d8da;
+      border-radius: 6px;
+      padding: 3px 10px;
+    }
+    &__link-svg {
+      height: 16px;
+      width: 16px;
+      filter: brightness(0) saturate(100%) invert(35%) sepia(18%) saturate(323%)
+        hue-rotate(171deg) brightness(98%) contrast(88%);
+    }
+    &__link-text {
+      margin-left: 8px;
+    }
+    &__link-number {
+      background-color: rgba(27, 31, 36, 0.08);
+      padding: 0 6px;
+      border-radius: 10px;
+      margin-left: 4px;
+    }
+}
