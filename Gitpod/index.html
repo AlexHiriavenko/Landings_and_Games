@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gitpod-Template</title>
+  <link rel="icon" type="image/png" sizes="29x32" href="./dist/img/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap&_v=20250105191439"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./dist/css/styles.min.css?_v=20250105191439" />
+</head>
+
+
+<body>
+  <div class="app-container">
+    <header>
+  <a class="logo-link" href="#">
+    <img class="logo-img" src="./dist/img/header/gitpod-logo.png" alt="logo" width="131" height="40" />
+  </a>
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__list-item"><a class="nav__link" href="#">Features</a></li>
+      <li class="nav__list-item"><a class="nav__link" href="#">Pricing</a></li>
+      <li class="nav__list-item"><a class="nav__link" href="#">Blog</a></li>
+      <li class="nav__list-item"><a class="nav__link" href="#">Docs</a></li>
+      <li class="nav__list-item"><a class="nav__link" href="#">Changelog</a></li>
+      <li class="nav__list-item"><a class="nav__link" href="#">We're hiring</a></li>
+    </ul>
+  </nav>
+  <div class="btn-group">
+    <button class="btn-burger">
+      <span class="btn-burger__line top"></span>
+      <span class="btn-burger__line bottom"></span>
+    </button>
+    <button class="btn-login">Login</button>
+  </div>
+</header>
+    <main>
+  <section id="banner-section" class="banner">
+  <div class="banner__left">
+    <h1 class="banner__title"
+      >Always <br />
+      Ready to Code.</h1
+    >
+    <p class="banner__text"
+      >Spin up fresh, automated dev environments <br />
+      for each task, in the cloud, in seconds</p
+    >
+    <div class="try-now__container">
+      <div class="try-now__wrapprer">
+        <a class="try-now__link" href="https://gitpod.io/login/" target="_blank"
+          >Try Now</a
+        >
+        <div class="try-now__links">
+          <a
+            class="try-now__link-social"
+            href="https://docs.gitlab.com/ee/integration/gitpod.html"
+            target="_blank"
+            ><img class="try-now__img" src="./dist/img/Banner/fox.png" alt="logo"
+          /></a>
+          <a
+            class="try-now__link-social"
+            href="https://github.com/gitpod-io/gitpod"
+            target="_blank"
+            ><img class="try-now__img" src="./dist/img/Banner/cat.png" alt="logo"
+          /></a>
+          <a
+            class="try-now__link-social"
+            href="https://www.gitpod.io/blog/bitbucket"
+            target="_blank"
+            ><img
+              class="try-now__img"
+              src="./dist/img/Banner/bitbucket.png"
+              alt="logo"
+          /></a>
+        </div>
+      </div>
+      <p class="try-now__text"
+        >Open a workspace. <br />
+        Start from any Git context.</p
+      >
+    </div>
+  </div>
+  <div class="banner__right">
+    <img
+      class="banner__img"
+      src="./dist/img/Banner/comp.png"
+      alt="room"
+      width="630" />
+  </div>
+</section>
+
+  <section id="benefits-section" class="benefits">
+  <h2 class="benefits__text benefits__text--main">Select project,</h2>
+  <p class="benefits__text benefits__text--secondary"
+    >check dependencies, checkout branch, view readme.txt, install tools, run
+    build, run test,
+  </p>
+  <p class="benefits__text benefits__text--main">start coding.</p>
+</section>
+
+  <section id="CI-CD-section" class="ci-cd">
+  <div class="ci-cd__left">
+    <h2 class="ci-cd__title">Think CI/CD for dev environments</h2>
+    <p class="ci-cd__text">We invented prebuilds so application code, configuration and
+      infrastructure can all be stored as machine-executable code in your git
+      repositories and applied to dev environments automatically and
+      continuously.</p>
+    <div class="ci-cd__links">
+      <a class="ci-cd__link" href="https://www.gitpod.io/docs/configure/repositories/prebuilds" target="_blank">More on
+        prebuilds</a>
+      <a class="ci-cd__link" href="https://www.gitpod.io/docs/introduction" target="_blank">Documentation</a>
+    </div>
+  </div>
+  <div class="ci-cd__right">
+    <img src="./dist/img/CI-CD/code.png" alt="programming code" />
+  </div>
+</section>
+  <section id="remote-first-section" class="remote-first">
+  <h2 class="remote-first__title">Remote-first. Secure by design.</h2>
+  <div class="remote-first__img-wrapper">
+    <img
+      class="remote-first__img"
+      src="./dist/img/Remote-first/bigcode.png"
+      alt="programming code"
+      width="1246" />
+  </div>
+  <p class="remote-first__text"
+    >You no longer need an over-powered laptop to code, Gitpod works just as
+    smoothly on a Chromebook or iPad. All you need is a browser. Gitpod
+    centralizes all source code and never stores it on insecure machines and
+    networks.</p
+  >
+  <div class="remote-first__links">
+    <a
+      class="remote-first__link"
+      href="https://chromewebstore.google.com/detail/gitpod/dodmmooeoklaejobgleioelladacbeki"
+      target="_blank">
+      <div class="ellipse chrome">
+        <img
+          src="./dist/img/Remote-first/google.png"
+          alt="icon"
+          width="24"
+          height="24" />
+        <span>Chrome Extension</span>
+      </div>
+    </a>
+    <a
+      class="remote-first__link"
+      href="https://addons.mozilla.org/ru/firefox/addon/gitpod/"
+      target="_blank">
+      <div class="ellipse fox">
+        <img
+          src="./dist/img/Remote-first/firefox.png"
+          alt="icon"
+          width="24"
+          height="24" />
+        <span>Firefox Extension</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+  <section id="testimonials-section" class="testimonials">
+  <h2 class="testimonials__title">Used by 400,000+ developers.</h2>
+  <div id="testimonials__cards">
+    <template id="card-template">
+      <div class="testimonials__card">
+        <p class="testimonials__card-text"></p>
+        <div class="author-wrapper">
+          <img class="testimonials__card-author-avatar" src="" alt="avatar" />
+          <div class="author-wrapper-inner">
+            <p class="testimonials__card-author"></p>
+            <p class="testimonials__card-author-role"></p>
+          </div>
+        </div>
+      </div>
+    </template>
+  </div>
+  <div class="companies-logos">
+    <img src="./dist/img/Testimonials/gitlab_logo.png" alt="company logo" />
+    <img src="./dist/img/Testimonials/freeCodeCamp_logo.png" alt="company logo" />
+    <img src="./dist/img/Testimonials/diwave_logo.png" alt="company logo" />
+    <img src="./dist/img/Testimonials/google_logo.png" alt="company logo" />
+    <img src="./dist/img/Testimonials/amazon_logo.png" alt="company logo" />
+    <img src="./dist/img/Testimonials/facebook_logo.png" alt="company logo" />
+    <img src="./dist/img/Testimonials/Uber_logo.png" alt="company logo" />
+    <img src="./dist/img/Testimonials/openAI_logo.png" alt="company logo" />
+    <img src="./dist/img/Testimonials/intel_logo.png" alt="company logo" />
+    <img src="./dist/img/Testimonials/theia_logo.png" alt="company logo" />
+    <img src="./dist/img/Testimonials/codeinst_logo.png" alt="company logo" />
+    <img src="./dist/img/Testimonials/4geeks_logo.png" alt="company logo" />
+  </div>
+</section>
+
+  <section id="get-started-section" class="get-started">
+  <h2 class="get-started__title">Get started now</h2>
+  <div class="get-started__container">
+    <section class="get-started__git git">
+      <h3 class="get-started__subtitle">Connect Git repository</h3>
+      <p class="get-started__text"
+        >Select a Git provider to start with an existing project from any Git
+        context.</p
+      >
+      <div class="git__links">
+        <a class="git__link" href="https://gitpod.io/login/" target="_blank">
+          <img src="./dist/img/Get-Started/gl.png" alt="" />
+          <span>Continue with GitLab</span>
+        </a>
+        <a class="git__link" href="https://gitpod.io/login/" target="_blank">
+          <img src="./dist/img/Get-Started/gh.png" alt="" />
+          <span>Continue with GitHub</span>
+        </a>
+        <a class="git__link" href="https://gitpod.io/login/" target="_blank">
+          <img src="./dist/img/Get-Started/bitbucket.png" alt="" />
+          <span>Continue with Bitbucket</span>
+        </a>
+      </div>
+      <p class="get-started__text"
+        >Or prefix any GitLab, GitHub or Bitbucket URL with</p
+      >
+      <p class="get-started__text accent">gitpod.io/#</p>
+    </section>
+    <section class="get-started-workspace workspace">
+      <h3 class="get-started__subtitle">Launch an example workspace</h3>
+      <p class="get-started__text">Dive into one of our example workspaces.</p>
+      <ul class="workspace__options-list">
+        <li class="workspace__options-item">
+          <span>
+            <img
+              src="./dist/img/Get-Started/node.png"
+              alt="icon"
+              width="27"
+              height="27" />
+            <span>Node or TypeScript</span>
+          </span>
+          <a
+            class="workspace__options-link"
+            href="https://www.gitpod.io/docs/introduction/getting-started/quickstart/typescript"
+            target="_blank"
+            >Launch workspace</a
+          >
+        </li>
+        <li class="workspace__options-item">
+          <span>
+            <img
+              src="./dist/img/Get-Started/python.png"
+              alt="icon"
+              width="27"
+              height="27" />
+            <span>Python</span>
+          </span>
+          <a
+            class="workspace__options-link"
+            href="https://www.gitpod.io/docs/introduction/getting-started/quickstart/python"
+            target="_blank"
+            >Launch workspace</a
+          >
+        </li>
+        <li class="workspace__options-item">
+          <span>
+            <img
+              src="./dist/img/Get-Started/go.png"
+              alt="icon"
+              width="27"
+              height="27" />
+            <span>Go</span>
+          </span>
+          <a
+            class="workspace__options-link"
+            href="https://www.gitpod.io/docs/introduction/getting-started/quickstart/go"
+            target="_blank"
+            >Launch workspace</a
+          >
+        </li>
+        <li class="workspace__options-item">
+          <span>
+            <img
+              src="./dist/img/Get-Started/rust.png"
+              alt="icon"
+              width="27"
+              height="27" />
+            <span>Rust</span>
+          </span>
+          <a
+            class="workspace__options-link"
+            href="https://www.gitpod.io/docs/introduction/getting-started/quickstart/rust"
+            target="_blank"
+            >Launch workspace</a
+          >
+        </li>
+        <li class="workspace__options-item">
+          <span>
+            <img
+              src="./dist/img/Get-Started/java.png"
+              alt="icon"
+              width="27"
+              height="27" />
+            <span>Java</span>
+          </span>
+          <a
+            class="workspace__options-link"
+            href="https://www.gitpod.io/docs/introduction/getting-started/quickstart/java"
+            target="_blank"
+            >Launch workspace</a
+          >
+        </li>
+        <li class="workspace__options-item">
+          <span>
+            <img
+              src="./dist/img/Get-Started/svetle.png"
+              alt="icon"
+              width="27"
+              height="27" />
+            <span>Svelte</span>
+          </span>
+          <a
+            class="workspace__options-link"
+            href="https://www.gitpod.io/docs/introduction/getting-started/quickstart/svelte"
+            target="_blank"
+            >Launch workspace</a
+          >
+        </li>
+      </ul>
+    </section>
+  </div>
+</section>
+
+</main>
+    <footer class="footer">
+  <div class="footer__container">
+    <ul class="footer__list">
+      <li>Gitpod</li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Changelog</a></li>
+      <li><a href="#">Self-Hosted</a></li>
+      <li><a href="#">Gitpod vs GitHub</a></li>
+      <li><a href="#">Codespaces</a></li>
+      <li><a href="#">Status</a></li>
+    </ul>
+    <ul class="footer__list">
+      <li>Developer</li>
+      <li><a href="#">Getting started</a></li>
+      <li><a href="#">Screencasts</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Documentation</a></li>
+      <li><a href="#">Report a bug</a></li>
+      <li><a href="#">Community</a></li>
+    </ul>
+    <ul class="footer__list">
+      <li>Company</li>
+      <li><a href="#">About</a></li>
+      <li class="star"><a href="#">Careers</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Media Kit</a></li>
+    </ul>
+    <ul class="footer__list">
+      <li>Legal</li>
+      <li><a href="#">Imprint</a></li>
+      <li><a href="#">Terms of Service</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+    </ul>
+  </div>
+  <div class="social-container">
+    <div class="copyright">
+      <img src="./dist/img/Footer/footer-logo.png" alt="logo" />
+      <span>Copyright © 2021 Gitpod</span>
+    </div>
+    <div class="socials">
+      <a href="https://x.com/gitpod" target="_blank"
+        ><img src="./dist/img/Footer/twitter2.png" alt="logo"
+      /></a>
+      <a href="https://github.com/gitpod-io" target="_blank"
+        ><img src="./dist/img/Footer/cat2.png" alt="logo"
+      /></a>
+      <a href="https://www.gitpod.io/chat" target="_blank"
+        ><img src="./dist/img/Footer/cloud.png" alt="logo"
+      /></a>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  <div class="popup-coockies">
+  <p
+    >This website uses cookies to enhance the user experience. Read our
+    <a href="https://www.gitpod.io/privacy" target="_blank">privacy policy</a>
+    for more info</p
+  >
+  <button>Accept Cookies</button>
+</div>
+
+  <script type="module" src="./dist/js/app.min.js?_v=20250105191439"></script>
+</body>
+
+</html>
