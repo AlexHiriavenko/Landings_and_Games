@@ -13,12 +13,12 @@
 
 ### Landings Code Source URLs:
 
-- [Coffee-House]()
-- [Library]()
-- [Gitpod]()
-- [Audio-Player]()
-- [Forkio]()
-- [The_Ham]()
+- [Coffee-House](https://github.com/AlexHiriavenko/Landings_and_Games/tree/main/Coffee-House)
+- [Library](https://github.com/AlexHiriavenko/Landings_and_Games/tree/main/Library)
+- [Gitpod](https://github.com/AlexHiriavenko/Landings_and_Games/tree/main/Gitpod)
+- [Audio-Player](https://github.com/AlexHiriavenko/Landings_and_Games/tree/main/Audio-Player)
+- [Forkio](https://github.com/AlexHiriavenko/Landings_and_Games/tree/main/Forkio)
+- [The_Ham](https://github.com/AlexHiriavenko/Landings_and_Games/tree/main/The_Ham)
 
 ## Games
 
@@ -30,6 +30,6 @@
 
 ### Games Code Source URLs:
 
-- [Nonograms]()
-- [Hangman]()
-- [Tic-Tac-Toe]()
+- [Nonograms](https://github.com/AlexHiriavenko/Landings_and_Games/tree/main/Nonograms)
+- [Hangman](https://github.com/AlexHiriavenko/Landings_and_Games/tree/main/Hangman)
+- [Tic-Tac-Toe](https://github.com/AlexHiriavenko/Landings_and_Games/tree/main/Tic-Tac-Toe)
