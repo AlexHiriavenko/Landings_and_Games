@@ -33,3 +33,4 @@
 - [Nonograms](https://github.com/AlexHiriavenko/Landings_and_Games/tree/main/Nonograms)
 - [Hangman](https://github.com/AlexHiriavenko/Landings_and_Games/tree/main/Hangman)
 - [Tic-Tac-Toe](https://github.com/AlexHiriavenko/Landings_and_Games/tree/main/Tic-Tac-Toe)
+- [BattleShip](https://github.com/AlexHiriavenko/Landings_and_Games/tree/main/ws-battleship)
